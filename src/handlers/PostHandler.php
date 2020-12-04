@@ -87,7 +87,7 @@ class PostHandler {
 
     public function getPhotosFrom($idUser) {
         $photosData = Post::select()   
-            ->where('user_id', $idUser)
+            ->where('id_user', $idUser)
             ->where('type', 'photo')
         ->get();
 
